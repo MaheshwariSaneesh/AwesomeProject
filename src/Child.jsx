@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 const Child = ({sendDataToParent,data}) => {
   const [childData,setChildDAta]= useState([])
   return (
-    <View style={{justifyContent:"center",alignItems:"center"}}>
+    <View style={{justifyContent:"center",alignItems:"center", flex:1}}>
         <TextInput value={childData} 
         onChangeText={(text)=>setChildDAta(text)}
         style={{height:40, width:200, backgroundColor:'red'}} />
